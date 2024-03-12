@@ -1,10 +1,8 @@
 .body{
-    /* background-color: #fff5b3; */
     background: linear-gradient(rgb(153, 0, 0),rgb(171, 5, 5),rgb(133, 5, 5) ,rgb(0, 0, 0));
     box-sizing: border-box;
     font-size: 1.5em;
     color: #000000;
-   
 }
 
 header{
@@ -29,13 +27,6 @@ header{
     width: 100%;
 }
 
-.label_nombre{
-    margin: 10px;
-}
-#input_nombre{
-    /* width: 20%; */
-    margin: 10px;
-}
 
 .bton, .aparece{
     
@@ -47,14 +38,14 @@ header{
     color: #ecf1f2;
 }
 
-
+#espacio{
+    height: 50vh;
+}
 
 .canvas {
     width: 90vw;
-    /* height: 90vh; */
     display: flex;
     margin: auto;
-    /* position: relative; */
     background-color: #fff5b3;
     border:solid;
 }
@@ -104,8 +95,6 @@ footer{
     text-align: center;
 }
 
-
-
 footer li,p{
     font-size: 0.8em;
 }
@@ -122,8 +111,9 @@ a:focus,a:hover {
 }
 
 @media(max-width: 600px) {
-    #input_nombre{
-        width: 80%;
+   
+    .canvas{
+        height: 50vh;
     }
     .bton{
         width: 80%;
@@ -134,8 +124,7 @@ a:focus,a:hover {
     }
 }
 
-@media(min-width:1000px){
-  
+@media(min-width:600px){
     .oculta{
         display:none;
     }

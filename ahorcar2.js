@@ -52,6 +52,7 @@ function escogerPalabraSecreta() {
     
    function iniciarJuego() {
     document.getElementById("caja_input").style.display = "none"; //desaparece toda la caja input
+    document.getElementById("espacio").style.display="none";
     document.getElementById("tecladoVirtual").classList.toggle("oculta")//saco la clase oculta!
     document.getElementById("canvas").classList.toggle("oculta")//agrega el oculta
     document.getElementById("desaparece").classList.toggle("ocultar");//le saca el ocultar
