@@ -51,11 +51,11 @@ function escogerPalabraSecreta() {
 
     
    function iniciarJuego() {
-    document.getElementById("caja_input").style.display = "none"; //desaparece toda la caja input
+    document.getElementById("caja_input").style.display = "none";
     document.getElementById("espacio").style.display="none";
-    document.getElementById("tecladoVirtual").classList.toggle("oculta")//saco la clase oculta!
-    document.getElementById("canvas").classList.toggle("oculta")//agrega el oculta
-    document.getElementById("desaparece").classList.toggle("ocultar");//le saca el ocultar
+    document.getElementById("tecladoVirtual").classList.toggle("oculta")
+    document.getElementById("canvas").classList.toggle("oculta")
+    document.getElementById("desaparece").classList.toggle("ocultar");
     escogerPalabraSecreta()
     dibujarLinea()
     }
@@ -69,23 +69,22 @@ for(let i=0; i < boton_letras.length ;i++){
 }
 
 function click_letras(event){
-    button=event.target;//es todo el boton
+    button=event.target;
     button.disabled=true;
-    letra=button.innerHTML;//contenido de la letra
+    letra=button.innerHTML;
     
         if ( palabraSecreta.includes(letra)) {
             errores=errores;
             for (let i = 0; i < palabraSecreta.length; i++) {
                 if (palabraSecreta[i] === letra) {
                     escribirLetraCorrecta(i)
-                    correctas.push(letra)//guado la letra correcta
+                    correctas.push(letra)
                 }
                 if (palabraSecreta.length === correctas.length) {
                     ganaste = true;
                     canvas.clearRect(0,0,700,500);
                     Swal.fire({
                         title: 'GANASTE!!',
-                        // width: 600,
                         padding: '2em',
                         color: '#716add',
                         html: `
@@ -139,12 +138,9 @@ function ahorcar(intentoErrado) {
                 break;
        
         case 7:
-            // canvas.clearRect(0,0,700,500);
-            // canvas.drawImage(img7,50, 50)
             Swal.fire({
                 icon: 'error',
                 title: 'Tu has perdido!!!',
-                // text: 'Lo has ahorcado, la palabra era: ' + palabraSecreta + ' sigue intentandolo! ',
                 showCancelButton: true,
                 confirmButtonText: 'Reiniciar',
                 cancelButtonText: 'Cancelar',

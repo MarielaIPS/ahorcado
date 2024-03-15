@@ -30,8 +30,8 @@ function dibujarLinea(){
     let anchura = 900/palabraSecreta.length;
 
     for(let i = 0; i < palabraSecreta.length; i++){
-        canvas.moveTo(100 + (anchura*i),590);//690
-        canvas.lineTo(150 + (anchura*i),590);//690
+        canvas.moveTo(100 + (anchura*i),590);
+        canvas.lineTo(150 + (anchura*i),590);
     }
     canvas.stroke();
     canvas.closePath();
@@ -46,7 +46,7 @@ function escribirLetraCorrecta(index){
     canvas.fillStyle = "#000000";
     
     let anchura = 900/palabraSecreta.length;
-    canvas.fillText(palabraSecreta[index],105 + (anchura*index), 585) //685
+    canvas.fillText(palabraSecreta[index],105 + (anchura*index), 585) 
     canvas.stroke()
 
 }
@@ -58,5 +58,5 @@ function escribirLetraIncorrecta(letra,errorsLeft){
     canvas.lineCap = "round" ;
     canvas.lineJoin = "round" ;
     canvas.fillStyle = "#000000";
-    canvas.fillText(letra,300+(40*(10+errorsLeft)),200,40)//500 -590
+    canvas.fillText(letra,300+(40*(10+errorsLeft)),200,40)
 }
