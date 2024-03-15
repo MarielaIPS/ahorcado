@@ -1,8 +1,15 @@
 .body{
-    background: linear-gradient(rgb(153, 0, 0),rgb(171, 5, 5),rgb(133, 5, 5) ,rgb(0, 0, 0));
+    /* background: linear-gradient(rgb(153, 0, 0),rgb(171, 5, 5),rgb(133, 5, 5) ,rgb(0, 0, 0)); */
+    background-image: url("img/nubes.jpg");
+    background-size: cover;
+    background-position: center;
     box-sizing: border-box;
     font-size: 1.5em;
     color: #000000;
+}
+
+#titulo_juego{
+    width: 100%;
 }
 
 header{
@@ -30,12 +37,12 @@ header{
 
 .bton, .aparece{
     
-    background-color: rgb(111, 0, 0);
+    background-color: rgb(40, 129, 255);
     border-radius: 20px;
     margin: 10px;
     font-weight:bold;
     min-width: 200px;
-    color: #ecf1f2;
+    color: #000000;
 }
 
 #espacio{

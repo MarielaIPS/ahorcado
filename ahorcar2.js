@@ -86,13 +86,13 @@ function click_letras(event){
                     Swal.fire({
                         title: 'GANASTE!!',
                         // width: 600,
-                        padding: '3em',
+                        padding: '2em',
                         color: '#716add',
                         html: `
                         <div>
                           <h1>¡Felicidades!</h1>
                           <p>Has ganado el juego.</p>
-                          <img src="gano.jpg" width="150px" />
+                          <img src="img/gano.jpg" width="150px" />
                         </div>`
                     })
                     
@@ -150,7 +150,7 @@ function ahorcar(intentoErrado) {
                 cancelButtonText: 'Cancelar',
                 html: `
                     <h1>Bart ha muerto</h1>
-                  <img src="bart_muerto.jpg" width="200px"/>
+                  <img src="img/bart_muerto.jpg" width="200px"/>
                `
             }).then((result) => {
                 if (result.value) {
